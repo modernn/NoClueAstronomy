@@ -71,17 +71,18 @@
 ```
 NoClueAstronomy/
 │
-├── app/
-│   ├── main.py         # FastAPI entry point
-│   ├── models/         # Database models
-│   ├── routers/        # API endpoints
-│   ├── services/       # Business logic
-│   ├── utils/          # Helper functions
-│   └── templates/      # Frontend templates (if applicable)
-│
-├── tests/              # Test cases
-├── requirements.txt    # Python dependencies
-└── README.md           # Project documentation
+├── backend/
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── models/
+│   │   └── routers/
+│   │       └── events.py
+│   ├── Dockerfile
+│   └── requirements.txt
+├── docker-compose.yml
+├── frontend/
+├── LICENSE
+└── README.md
 ```
 
 ---
