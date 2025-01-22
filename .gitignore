@@ -37,6 +37,3 @@ podman-compose-generated-network/
 
 # Ignore the .git folder and its contents
 .git/
-
-# Ignore .env folders and it's contents
-.venv/
