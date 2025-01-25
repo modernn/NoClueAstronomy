@@ -93,6 +93,6 @@ jobs:
           az webapp restart --name ${{ env.AZURE_WEBAPP_NAME }} --resource-group ${{ env.AZURE_RESOURCE_GROUP }}
         env:
           AZURE_WEBAPP_NAME: NoClueAstronomy
-          AZURE_RESOURCE_GROUP: MyResourceGroup
+          AZURE_RESOURCE_GROUP: NoClueAstronomy
         
         
