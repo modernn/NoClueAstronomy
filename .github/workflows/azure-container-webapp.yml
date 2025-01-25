@@ -85,15 +85,4 @@ jobs:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           images: 'ghcr.io/${{ env.REPO }}:${{ github.sha }}'
-      
-      - name: Restart Azure Web App
-        if: ${{ success() }}
-        run: |
-          echo "${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}" > publishProfile.publishsettings
-          az webapp deployment slot swap --name ${{ env.AZURE_WEBAPP_NAME }} --resource-group ${{ env.AZURE_RESOURCE_GROUP }}
-          az webapp restart --name ${{ env.AZURE_WEBAPP_NAME }} --resource-group ${{ env.AZURE_RESOURCE_GROUP }}
-        env:
-          AZURE_WEBAPP_NAME: NoClueAstronomy
-          AZURE_RESOURCE_GROUP: NoClueAstronomy
-      
-        
+          
