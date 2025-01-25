@@ -51,19 +51,19 @@ Before you begin, ensure you have the following installed:
 ### Option 2: Running Streamlit Independently
 
 1. **Clone the repository**:
-   ```bash
+   ```powershell
    git clone https://github.com/modernn/NoClueAstronomy.git
-   cd NoClueAstronomy/webapp
+   cd NoClueAstronomy
    ```
 
 2. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
+   ```powershell
+   pip install -r .\webapp\requirements.txt
    ```
 
 3. **Run the application**:
-   ```bash
-   streamlit run app.py
+   ```powershell
+   streamlit run .\webapp\app.py
    ```
 
 4. **Access the application**:
