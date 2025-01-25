@@ -7,10 +7,11 @@
 ## Features
 
 1. **APOD Page**
+
    - Displays the Astronomy Picture of the Day (APOD) using NASA's API.
    - Includes detailed explanations of the image or video of the day.
-
 2. **Glossary Page**
+
    - Provides definitions and explanations of common astronomy terms.
    - Useful for beginners and enthusiasts alike.
 
@@ -31,42 +32,44 @@ Before you begin, ensure you have the following installed:
 ### Option 1: Using Docker
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/modernn/NoClueAstronomy.git
    cd NoClueAstronomy
    ```
-
 2. **Run the application with Docker Compose**:
+
    ```bash
    docker-compose up --build
    ```
-
 3. **Access the application**:
-   - Open your browser and navigate to `http://localhost:8501`.
 
+   - Open your browser and navigate to `http://localhost:8501`.
 4. **Stop the application**:
+
    - Use `Ctrl+C` to stop the application.
    - Run `docker-compose down` to clean up the containers.
 
 ### Option 2: Running Streamlit Independently
 
 1. **Clone the repository**:
+
    ```powershell
    git clone https://github.com/modernn/NoClueAstronomy.git
-   cd NoClueAstronomy
+   cd NoClueAstronomy/webapp/
    ```
-
 2. **Install dependencies**:
-   ```powershell
-   pip install -r .\webapp\requirements.txt
-   ```
 
+   ```powershell
+   pip install -r .\requirements.txt
+   ```
 3. **Run the application**:
-   ```powershell
-   streamlit run .\webapp\app.py
-   ```
 
+   ```powershell
+   streamlit run .\app.py
+   ```
 4. **Access the application**:
+
    - Open your browser and navigate to the URL displayed in the terminal (e.g., `http://localhost:8501`).
 
 ---
@@ -118,4 +121,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - NASA's Astronomy Picture of the Day (APOD) API
 - [Streamlit](https://streamlit.io/) for providing an easy-to-use framework for building data apps.
-
