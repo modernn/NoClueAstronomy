@@ -11,6 +11,8 @@ st.markdown(
     - **Meteor Shower**: A celestial event where multiple meteors are observed to radiate from one point in the night sky.
     - **Nebula**: A giant cloud of dust and gas in space.
     - **Supernova**: A powerful and luminous explosion of a star.
+    
+    Cool new things to think about!!!!
 
     ### Expand Your Knowledge
     This glossary will grow as we continue to expand NoClueAstronomy. Check back for more terms!
