@@ -1,4 +1,7 @@
 import streamlit as st
+from components import sidebar as sb
+
+sb.render_sidebar()
 
 # Glossary page content
 st.title("Astronomy Glossary 🌟")

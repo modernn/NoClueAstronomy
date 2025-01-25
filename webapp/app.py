@@ -1,6 +1,7 @@
 import streamlit as st
-from streamlit_extras.switch_page_button import switch_page
+from components import sidebar as sb
 
+sb.render_sidebar()
 
 # Main landing page content
 st.title("Welcome to NoClueAstronomy 🌌")
