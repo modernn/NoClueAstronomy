@@ -1,7 +1,9 @@
 import streamlit as st
 from streamlit_extras.switch_page_button import switch_page
-
-
+import requests
+import requests
+from datetime import date
+import pages.apod as apod
 # Main landing page content
 st.title("Welcome to NoClueAstronomy 🌌")
 st.markdown(
@@ -17,3 +19,4 @@ st.markdown(
     *Start exploring the cosmos now!*
     """
 )
+apod_data = apod.fetch_current_apod()  # No arguments needed

@@ -5,8 +5,10 @@ from datetime import date
 # Set up the APOD page
 st.title("NASA Astronomy Picture of the Day 🌌")
 
-# Input for selecting a date
-selected_date = st.date_input("Select a date for the APOD", value=date.today())
+
+def fetch_current_apod():
+    return fetch_apod(API_KEY,current_date)
+
 
 # Fetch the APOD data from NASA API
 @st.cache_data
@@ -25,9 +27,12 @@ def fetch_apod(api_key, apod_date):
 # NASA API Key (replace with your actual key)
 API_KEY = "IkuABPxWolnxE8KbyBqXECfMLWfEmJek10hDSduE"
 
+# Get current date
+current_date = date.today().strftime("%Y-%m-%d")
+
 # Fetch and display the APOD
-if st.button("Fetch APOD"):
-    apod_data = fetch_apod(API_KEY, selected_date.strftime("%Y-%m-%d"))
+with st.spinner("Fetching today's APOD..."):
+    apod_data = fetch_apod(API_KEY, current_date)
     
     if "error" in apod_data:
         st.error(apod_data["error"])
