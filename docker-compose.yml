@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  webapp:
+    build:
+      context: ./webapp
+      dockerfile: dockerfile
+    container_name: webapp_service
+    working_dir: /app
+    volumes:
+      - ./webapp:/app
+    ports:
+      - "8501:8501"
+    command: ["streamlit", "run", "app.py"]
+    environment:
+      - STREAMLIT_SERVER_ENABLE_CORS=false
+      - STREAMLIT_SERVER_PORT=8501

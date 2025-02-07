@@ -1,6 +1,9 @@
 import streamlit as st
 import requests
 from datetime import date
+from components import sidebar as sb
+
+sb.render_sidebar()
 
 # Set up the APOD page
 st.title("NASA Astronomy Picture of the Day 🌌")
@@ -37,5 +40,5 @@ with st.spinner("Fetching today's APOD..."):
     if "error" in apod_data:
         st.error(apod_data["error"])
     else:
-        st.image(apod_data["url"], caption=apod_data["title"], use_column_width=True)
+        st.image(apod_data["url"], caption=apod_data["title"], use_container_width=True)
         st.write(apod_data["explanation"])
