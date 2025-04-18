@@ -4,7 +4,7 @@ from typing import Dict, Any, Optional
 from fastapi import Depends
 from sqlalchemy.orm import Session
 
-from app.models import get_db, CachedBody, CachedEvent, SearchHistory
+from api.models import get_db, CachedBody, CachedEvent, SearchHistory
 
 # Configure logging
 logger = logging.getLogger(__name__)
