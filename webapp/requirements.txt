@@ -1,5 +1,0 @@
-streamlit
-pandas
-numpy
-requests
-streamlit_extras
